@@ -12,6 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+       
+        'myellow': {
+          DEFAULT: '#F6B847',
+        },
+        'mblack': {
+          DEFAULT: '#231F20',
+        },
+        'mwhite': {
+          DEFAULT: '#F9F4E8',
+        },
+        
+      },
     },
   },
   plugins: [],

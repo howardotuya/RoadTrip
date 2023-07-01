@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url('../public/clashdisplay/Fonts/WEB/css/clash-display.css');
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #231F20;;
+  font-family: "Manrope";
+}
+
+.cD400 {
+  font-family: 'ClashDisplay-Regular';
+}
+.cD500 {
+  font-family: 'ClashDisplay-Medium';
+}
+.cD600 {
+  font-family: 'ClashDisplay-Semibold';
+}
+
+.headerBG {
+  background-color: #F6B847;
+  background-image: url('../public/rough-bg.png');
+}
