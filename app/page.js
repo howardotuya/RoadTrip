@@ -69,7 +69,7 @@ export default function Home() {
             <Image
               src={rtlogosmall}
               alt="RoadTrip Community Logo"
-              className="block lg:hidden  w-[88px] h-[22px]"
+              className="block lg:hidden w-[82px] h-[22px]"
               quality={100}
               priority
             />

@@ -3,7 +3,8 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css?family=Manrope");
 @import url("../public/clashdisplay/Fonts/WEB/css/clash-display.css");
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("../public/sf/stylesheet.css");
+
 
 html,
 body {
@@ -49,7 +50,7 @@ body {
 .sidebar-text > a {
   color: #231f20;
   font-size: 32px;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -67,7 +68,7 @@ body {
   color: #f9f4e8;
   background-color: #231f20;
   font-size: 32px;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
