@@ -1,16 +1,17 @@
-"use client"
+"use client";
 import Image from "next/image";
 import rtlogo from "../public/rtlogo.png";
 import rtlogosmall from "../public/rtlogo-small.png";
 import menu from "../public/menu.png";
+import heros from "../public/heros.png";
 import close from "../public/close.png";
 import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.getElementById("sidebar").style.display = "none"
-  }, [])
+    document.getElementById("sidebar").style.display = "none";
+  }, []);
 
   const popuphandler = () => {
     const popup = document.getElementById("sidebar");
@@ -40,26 +41,33 @@ export default function Home() {
               <Image
                 src={close}
                 alt="close logo"
-                className="w-8 h-8" 
+                className="w-8 h-8"
                 quality={100}
-                priority 
+                priority
                 onClick={popuphandler}
               />
             </div>
           </div>
 
           <div className="h-full justify-between flex flex-col">
-
             <div class="sidebar-text flex flex-col">
-              <Link href="#" onClick={popuphandler}>About Us</Link>
-              <Link href="#" onClick={popuphandler}>Inside Danfo Bus</Link>
-              <Link href="#" onClick={popuphandler}>Partner With Us</Link>
+              <Link href="#" onClick={popuphandler}>
+                About Us
+              </Link>
+              <Link href="#" onClick={popuphandler}>
+                Inside Danfo Bus
+              </Link>
+              <Link href="#" onClick={popuphandler}>
+                Partner With Us
+              </Link>
             </div>
 
-            <div><Link href="#" onClick={popuphandler} className="sidebar-cta">Donate</Link></div>
-
+            <div>
+              <Link href="#" onClick={popuphandler} className="sidebar-cta">
+                Donate
+              </Link>
+            </div>
           </div>
-
         </div>
       </nav>
 
@@ -95,7 +103,7 @@ export default function Home() {
                 href="#"
                 className="cD600 bg-[#231F20]  text-[#F9F4E8] py-5 pl-16 shrink-0 flex pr-7"
               >
-                Donate 
+                Donate
               </Link>
             </div>
             <div onClick={popuphandler} class="block lg:hidden py-[17px] px-6">
@@ -109,6 +117,20 @@ export default function Home() {
             </div>
           </div>
         </nav>
+
+        <div className="flex flex-col justify-center items-center">
+          <div>
+            <div className="">
+              <Image
+                src={heros}
+                alt=""
+                className="border-[5px] border-mblack w-full max-w-[1200px] h-auto"
+                quality={100}
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </header>
     </>
   );
