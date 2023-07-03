@@ -22,6 +22,10 @@ body {
 .cD600 {
   font-family: "ClashDisplay-Semibold";
 }
+.cD700 {
+  font-family: "ClashDisplay-Bold";
+}
+
 .sf {
   font-family: "SF Pro Display";
 }
@@ -73,4 +77,16 @@ body {
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.offshad {
+  box-shadow: 16px 16px 0 0 #198046;
+}
+
+.h2-01 {
+  color: #231F20;
+font-size: 88px;
+font-style: normal;
+line-height: normal;
+letter-spacing: -0.88px;
 }

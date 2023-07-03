@@ -118,19 +118,22 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="flex flex-col justify-center items-center">
-          <div>
+        <section className="flex flex-col justify-center items-center">
+          <div class="pt-10">
             <div className="">
               <Image
                 src={heros}
                 alt=""
-                className="border-[5px] border-mblack w-full max-w-[1200px] h-auto"
+                className="border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
                 quality={100}
                 priority
               />
             </div>
+            <div className="pt-[29px]">
+              <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
+            </div>
           </div>
-        </div>
+        </section>
       </header>
     </>
   );
