@@ -1,16 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("../public/visby/style.css");
 @import url("https://fonts.googleapis.com/css?family=Manrope");
 @import url("../public/clashdisplay/Fonts/WEB/css/clash-display.css");
 @import url("../public/sf/stylesheet.css");
-
 
 html,
 body {
   scroll-behavior: smooth;
   color: #231f20;
-  font-family: "Manrope", -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
 }
 
 .cD400 {
@@ -80,13 +82,48 @@ body {
 }
 
 .offshad {
-  box-shadow: 16px 16px 0 0 #198046;
+  box-shadow: 4px 4px 0 0 #198046;
+}
+
+.bg-grene {
+  background: #47996b;
 }
 
 .h2-01 {
-  color: #231F20;
-font-size: 88px;
-font-style: normal;
-line-height: normal;
-letter-spacing: -0.88px;
+  color: #231f20;
+  font-size: 36px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.p-01 {
+  font-family: "Visby Semibold";
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (min-width: 1023px) {
+  .h2-01 {
+    color: #231f20;
+    font-size: 88px;
+    font-family: "ClashDisplay-Bold";
+    letter-spacing: -0.88px;
+  }
+
+  .offshad {
+    box-shadow: 16px 16px 0 0 #198046;
+  }
+
+  .bg-grene {
+    background: #198046;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1900px) {
 }

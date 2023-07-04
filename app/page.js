@@ -119,18 +119,23 @@ export default function Home() {
         </nav>
 
         <section className="flex flex-col justify-center items-center">
-          <div class="pt-10">
+          <div class="pt-10 px-5">
             <div className="">
               <Image
                 src={heros}
                 alt=""
-                className="border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
+                className="border-[1.404px] lg:border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
                 quality={100}
                 priority
               />
             </div>
             <div className="pt-[29px]">
               <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
+            </div>
+            <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
+              <Link href="" className="bg-grene self-start lg:self-end sf font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6">Meet the roadtrippers</Link>
+              <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312]">Pack your bags, grab a map, and join us on our way to greatness. Collaboration, learning and fun awaits at RoadTrip Community</p>
+              <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">Join RoadTrip, a community of adventure seekers and tech enthusiasts, and let us embark on unforgettable journeys together</p>
             </div>
           </div>
         </section>
