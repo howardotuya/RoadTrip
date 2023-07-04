@@ -102,10 +102,33 @@ body {
   font-family: "Visby Semibold";
 }
 
+.visbymi {
+  font-family: 'Visby Medium Italic';
+}
+
+.bodyCon {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.infinte-scroll.active {justify-content: flex-start;
+}
+.infinte-scroll.flipping {justify-content: flex-end;
+}
 @media only screen and (min-width: 767px) {
+  .bodyCon {
+    padding: 0 64px;
+    max-width: 1440px;
+  }
 }
 
 @media only screen and (min-width: 1023px) {
+  .bodyCon {
+    padding: 0 64px;
+    max-width: 1440px;
+  }
+
   .h2-01 {
     color: #231f20;
     font-size: 88px;
@@ -123,6 +146,10 @@ body {
 }
 
 @media only screen and (min-width: 1400px) {
+  .bodyCon {
+    padding: 0;
+    max-width: 1440px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {

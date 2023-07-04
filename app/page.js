@@ -71,8 +71,8 @@ export default function Home() {
         </div>
       </nav>
 
-      <header className="headerBG">
-        <nav className="w-full  flex justify-between border-b-4 border-[#231F20]">
+      <header className="headerBG w-full">
+        <nav className="w-full flex justify-between border-b-4 border-[#231F20]">
           <div className="lg:px-6 px-3 border-r-4 border-[#231F20] flex justify-center items-center">
             <Image
               src={rtlogosmall}
@@ -118,8 +118,8 @@ export default function Home() {
           </div>
         </nav>
 
-        <section className="flex flex-col justify-center items-center">
-          <div class="pt-10 px-5">
+        <section className=" flex flex-col justify-center items-center">
+          <div class="pt-10 pb-8 lg:pb-[58px] px-5 lg:px-[64px] xl:px-0">
             <div className="">
               <Image
                 src={heros}
@@ -129,17 +129,67 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="pt-[29px]">
+            <div className="pt-6 lg:pt-[29px]">
+              <p class="block lg:hidden visbymi text-sm leading-[-0.24px]">
+                ....where strangers become family
+              </p>
               <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
             </div>
             <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
-              <Link href="" className="bg-grene self-start lg:self-end sf font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6">Meet the roadtrippers</Link>
-              <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312]">Pack your bags, grab a map, and join us on our way to greatness. Collaboration, learning and fun awaits at RoadTrip Community</p>
-              <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">Join RoadTrip, a community of adventure seekers and tech enthusiasts, and let us embark on unforgettable journeys together</p>
+              <Link
+                href=""
+                className="bg-grene self-start lg:self-end sf font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
+              >
+                Meet the roadtrippers
+              </Link>
+              <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312]">
+                Pack your bags, grab a map, and join us on our way to greatness.
+                Collaboration, learning and fun awaits at RoadTrip Community
+              </p>
+              <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">
+                Join RoadTrip, a community of adventure seekers and tech
+                enthusiasts, and let us embark on unforgettable journeys
+                together
+              </p>
             </div>
           </div>
         </section>
       </header>
+
+      <div class="containeris overflow-x-hidden">
+        <div
+          id="infinite-scroll"
+          class="bg-[#231F20] infinite-scroll justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6"
+        >
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
+          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            Design is intelligence made visible
+          </div>
+        </div>
+      </div>
     </>
   );
 }
