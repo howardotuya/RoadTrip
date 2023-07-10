@@ -56,9 +56,8 @@ body {
 .sidebar-text > a {
   color: #231f20;
   font-size: 32px;
-  font-family: "SF Pro Display";
+  font-family: "ClashDisplay-Semibold";
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   letter-spacing: -0.64px;
   border-bottom: 3px solid #231f20;
@@ -74,9 +73,8 @@ body {
   color: #f9f4e8;
   background-color: #231f20;
   font-size: 32px;
-  font-family: "SF Pro Display";
+  font-family: "ClashDisplay-Semibold";
   font-style: normal;
-  font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -92,9 +90,7 @@ body {
 .h2-01 {
   color: #231f20;
   font-size: 36px;
-  font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
 }
 

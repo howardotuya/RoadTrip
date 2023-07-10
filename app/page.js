@@ -22,7 +22,6 @@ export default function Home() {
 
     // Set the scroll amount and interval time
     const scrollAmount = 1; // Adjust this value to control the scroll speed
-    const intervalTime = 1; // Adjust this value to control the smoothness
 
     // Clone the content and append it to the container
     container.appendChild(content.cloneNode(true));
@@ -31,7 +30,6 @@ export default function Home() {
     function scrollHorizontally() {
       container.scrollLeft += scrollAmount;
 
-      // Reset the scroll position to 0 when reaching the end
       if (container.scrollLeft >= content.offsetWidth) {
         container.scrollLeft = 0;
       }
@@ -39,7 +37,6 @@ export default function Home() {
       requestAnimationFrame(scrollHorizontally)
     }
 
-    // Start the scrolling interval
     scrollHorizontally();
 
   }, []);
@@ -66,7 +63,7 @@ export default function Home() {
         >
           <div className="border-b-[3px] border-[#231F20] flex justify-between items-center">
             <div className="px-3">
-              <h2 className="tracking-[-0.32px] font-semibold sf">Menu</h2>
+              <h2 className="tracking-[-0.32px] font-semibold cD600">Menu</h2>
             </div>
             <div className="border-[#231F20] border-l-[3px] py-4 px-6">
               <Image
@@ -169,7 +166,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
               <Link
                 href=""
-                className="bg-grene self-start lg:self-end sf font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
+                className="bg-grene self-start lg:self-end cD600 font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
               >
                 Meet the roadtrippers
               </Link>
@@ -194,22 +191,22 @@ export default function Home() {
       >
         <div class=" scroll-content">
           <div class="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
-            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
               Design is intelligence made visible
             </p>
             <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
               Design is intelligence made visible
             </p>
             <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
               Design is intelligence made visible
             </p>
             <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
               Design is intelligence made visible
             </p>
             <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
