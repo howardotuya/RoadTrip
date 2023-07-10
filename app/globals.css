@@ -112,10 +112,6 @@ body {
   max-width: 1440px;
 }
 
-.infinte-scroll.active {justify-content: flex-start;
-}
-.infinte-scroll.flipping {justify-content: flex-end;
-}
 @media only screen and (min-width: 767px) {
   .bodyCon {
     padding: 0 64px;

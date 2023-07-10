@@ -6,11 +6,42 @@ import menu from "../public/menu.png";
 import heros from "../public/heros.png";
 import close from "../public/close.png";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function Home() {
+  const scrollingDivRef = useRef(null);
+
   useEffect(() => {
     document.getElementById("sidebar").style.display = "none";
+    // Get the container and content elements
+    const container = document.querySelector(".scroll-container");
+    const content = document.querySelector(".scroll-content");
+
+    // Set the scroll amount and interval time
+    const scrollAmount = 1; // Adjust this value to control the scroll speed
+    const intervalTime = 1; // Adjust this value to control the smoothness
+
+    // Clone the content and append it to the container
+    container.appendChild(content.cloneNode(true));
+
+    // Function to scroll the content horizontally
+    function scrollHorizontally() {
+      container.scrollLeft += scrollAmount;
+
+      // Reset the scroll position to 0 when reaching the end
+      if (container.scrollLeft >= content.offsetWidth) {
+        container.scrollLeft = 0;
+      }
+
+      requestAnimationFrame(scrollHorizontally)
+    }
+
+    // Start the scrolling interval
+    scrollHorizontally();
+
   }, []);
 
   const popuphandler = () => {
@@ -156,37 +187,33 @@ export default function Home() {
         </section>
       </header>
 
-      <div class="containeris overflow-x-hidden">
-        <div
-          id="infinite-scroll"
-          class="bg-[#231F20] infinite-scroll justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6"
-        >
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
-          </div>
-          <div className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></div>
-          <div className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
+      <div
+        ref={scrollingDivRef}
+        id="containeris"
+        class="bg-[#231F20] flex scroll-container overflow-x-hidden"
+      >
+        <div class=" scroll-content">
+          <div class="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
+            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              Design is intelligence made visible
+            </p>
+            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+
+            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              Design is intelligence made visible
+            </p>
+            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+
+            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              Design is intelligence made visible
+            </p>
+            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+
+            <p className="lg:cD500 sf lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              Design is intelligence made visible
+            </p>
+            <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+
           </div>
         </div>
       </div>
