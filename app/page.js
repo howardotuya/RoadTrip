@@ -34,11 +34,10 @@ export default function Home() {
         container.scrollLeft = 0;
       }
 
-      requestAnimationFrame(scrollHorizontally)
+      requestAnimationFrame(scrollHorizontally);
     }
 
     scrollHorizontally();
-
   }, []);
 
   const popuphandler = () => {
@@ -99,121 +98,132 @@ export default function Home() {
         </div>
       </nav>
 
-      <header className="headerBG w-full">
-        <nav className="w-full flex justify-between border-b-4 border-[#231F20]">
-          <div className="lg:px-6 px-3 border-r-4 border-[#231F20] flex justify-center items-center">
-            <Image
-              src={rtlogosmall}
-              alt="RoadTrip Community Logo"
-              className="block lg:hidden w-[82px] h-[22px]"
-              quality={100}
-              priority
-            />
-            <Image
-              src={rtlogo}
-              alt="RoadTrip Community Logo"
-              className="hidden lg:block w-[136px] h-[38.843px]"
-              quality={100}
-              priority
-            />
-          </div>
-
-          <div class="flex flex-row items-center justify-center border-l-4 border-[#231F20]">
-            <div class="hidden lg:flex flex-row items-center justify-center gap-6 font-medium pl-9 pr-8">
-              <div>About</div>
-              <div className="w-[7px] h-[7px] rounded-full bg-[#231f20]"></div>
-              <div>Inside Danfo Bus</div>
-              <div className="w-[7px] h-[7px] rounded-full bg-[#231f20]"></div>
-              <div>Partner With Us</div>
-            </div>
-            <div class="hidden lg:flex">
-              <Link
-                href="#"
-                className="cD600 bg-[#231F20]  text-[#F9F4E8] py-5 pl-16 shrink-0 flex pr-7"
-              >
-                Donate
-              </Link>
-            </div>
-            <div onClick={popuphandler} class="block lg:hidden py-[17px] px-6">
+      <main>
+        <header className="headerBG w-full">
+          <nav className="w-full flex justify-between border-b-4 border-[#231F20]">
+            <div className="lg:px-6 px-3 border-r-4 border-[#231F20] flex justify-center items-center">
               <Image
-                src={menu}
+                src={rtlogosmall}
                 alt="RoadTrip Community Logo"
-                className="block lg:hidden w-8 h-8"
+                className="block lg:hidden w-[82px] h-[22px]"
                 quality={100}
                 priority
               />
-            </div>
-          </div>
-        </nav>
-
-        <section className=" flex flex-col justify-center items-center">
-          <div class="pt-10 pb-8 lg:pb-[58px] px-5 lg:px-[64px] xl:px-0">
-            <div className="">
               <Image
-                src={heros}
-                alt=""
-                className="border-[1.404px] lg:border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
+                src={rtlogo}
+                alt="RoadTrip Community Logo"
+                className="hidden lg:block w-[136px] h-[38.843px]"
                 quality={100}
                 priority
               />
             </div>
-            <div className="pt-6 lg:pt-[29px]">
-              <p class="block lg:hidden visbymi text-sm leading-[-0.24px]">
-                ....where strangers become family
-              </p>
-              <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
-            </div>
-            <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
-              <Link
-                href=""
-                className="bg-grene self-start lg:self-end cD600 font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
+
+            <div class="flex flex-row items-center justify-center border-l-4 border-[#231F20]">
+              <div class="hidden lg:flex flex-row items-center justify-center gap-6 font-medium pl-9 pr-8">
+                <div>About</div>
+                <div className="w-[7px] h-[7px] rounded-full bg-[#231f20]"></div>
+                <div>Inside Danfo Bus</div>
+                <div className="w-[7px] h-[7px] rounded-full bg-[#231f20]"></div>
+                <div>Partner With Us</div>
+              </div>
+              <div class="hidden lg:flex">
+                <Link
+                  href="#"
+                  className="cD600 bg-[#231F20]  text-[#F9F4E8] py-5 pl-16 shrink-0 flex pr-7"
+                >
+                  Donate
+                </Link>
+              </div>
+              <div
+                onClick={popuphandler}
+                class="block lg:hidden py-[17px] px-6"
               >
-                Meet the roadtrippers
-              </Link>
-              <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312]">
-                Pack your bags, grab a map, and join us on our way to greatness.
-                Collaboration, learning and fun awaits at RoadTrip Community
-              </p>
-              <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">
-                Join RoadTrip, a community of adventure seekers and tech
-                enthusiasts, and let us embark on unforgettable journeys
-                together
-              </p>
+                <Image
+                  src={menu}
+                  alt="RoadTrip Community Logo"
+                  className="block lg:hidden w-8 h-8"
+                  quality={100}
+                  priority
+                />
+              </div>
             </div>
-          </div>
-        </section>
-      </header>
+          </nav>
 
-      <div
-        ref={scrollingDivRef}
-        id="containeris"
-        class="bg-[#231F20] flex scroll-container overflow-x-hidden"
-      >
-        <div class=" scroll-content">
-          <div class="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
-            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-              Design is intelligence made visible
-            </p>
-            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+          <section className=" flex flex-col justify-center items-center">
+            <div class="pt-10 pb-8 lg:pb-[58px] px-5 lg:px-[64px] xl:px-0">
+              <div className="">
+                <Image
+                  src={heros}
+                  alt=""
+                  className="border-[1.404px] lg:border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
+                  quality={100}
+                  priority
+                />
+              </div>
+              <div className="pt-6 lg:pt-[29px]">
+                <p class="block lg:hidden visbymi text-sm leading-[-0.24px]">
+                  ....where strangers become family
+                </p>
+                <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
+              </div>
+              <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
+                <Link
+                  href=""
+                  className="bg-grene self-start lg:self-end cD600 font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
+                >
+                  Meet the roadtrippers
+                </Link>
+                <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312]">
+                  Pack your bags, grab a map, and join us on our way to
+                  greatness. Collaboration, learning and fun awaits at RoadTrip
+                  Community
+                </p>
+                <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">
+                  Join RoadTrip, a community of adventure seekers and tech
+                  enthusiasts, and let us embark on unforgettable journeys
+                  together
+                </p>
+              </div>
+            </div>
+          </section>
+        </header>
 
-            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-              Design is intelligence made visible
-            </p>
-            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+        <div
+          ref={scrollingDivRef}
+          id="containeris"
+          class="bg-[#231F20] flex scroll-container overflow-x-hidden"
+        >
+          <div class=" scroll-content">
+            <div class="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+                Design is intelligence made visible
+              </p>
+              <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-              Design is intelligence made visible
-            </p>
-            <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+                Design is intelligence made visible
+              </p>
+              <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-            <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-              Design is intelligence made visible
-            </p>
-            <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+                Design is intelligence made visible
+              </p>
+              <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+                Design is intelligence made visible
+              </p>
+              <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
+            </div>
           </div>
         </div>
-      </div>
+
+        <section>
+          <div>
+            <p>WE AT “RoadTrip Community” believe that growth is a marathon, not a sprint.  THAT IS WHAT OUR NAME SYMBOLIZES; OUR journey of growth, progress, and community support.</p>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
