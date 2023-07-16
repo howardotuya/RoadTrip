@@ -218,11 +218,94 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="bg-[#E7A6D5] lg:border-t-4 lg:border-b-4 border-t border-b border-[#231F20]">
-          <div class="lg:py-[74px] lg:px-[120px] py-10 px-8">
-            <p class="text-2xl hidden lg:block lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center">WE AT <span class="cD600">“RoadTrip Community”</span> believe that growth is a <span class="cD600">marathon</span>, not a sprint.  THAT IS WHAT OUR NAME <span class="cD600">SYMBOLIZES</span>; OUR journey of growth, progress, and community support.</p>
-            <p class="text-2xl block lg:hidden lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center leading-normal">The name <span class="cD600">“RoadTrip”</span> for the community was coined from the <span class="cD600">understanding</span> that <span class="cD600">life’s race is not a sprint</span> but rather a <span class="cD600">marathon.</span></p>
+        <section class="bg-[#E7A6D5] lg:border-t-4 lg:border-b-4 border-t border-b border-[#231F20]">
+          <div className=" bodyCon">
+            <div class="lg:py-[74px] lg:px-[120px] py-10 px-8">
+              <p class="text-2xl hidden lg:block lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center">
+                WE AT <span class="cD600">“RoadTrip Community”</span> believe
+                that growth is a <span class="cD600">marathon</span>, not a
+                sprint. THAT IS WHAT OUR NAME{" "}
+                <span class="cD600">SYMBOLIZES</span>; OUR journey of growth,
+                progress, and community support.
+              </p>
+              <p class="text-2xl block lg:hidden lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center leading-normal">
+                The name <span class="cD600">“RoadTrip”</span> for the community
+                was coined from the <span class="cD600">understanding</span>{" "}
+                that <span class="cD600">life’s race is not a sprint</span> but
+                rather a <span class="cD600">marathon.</span>
+              </p>
+            </div>
           </div>
+        </section>
+
+        <section className="conntianer px-[12px] lg:px-[120px] py-[48px] lg:py-[72px]">
+          <div className="blue offshadblack bg-[#6868AC] lg:bg-[#4D34CC] border lg:border-[3px] border-[#231F20] p-[10px] lg:p-4 text-white">
+            <div class="border lg:border-[3px] border-white px-6 lg:px-20 py-[38px] lg:py-[60px] flex flex-col gap-10">
+              <p class="hidden lg:block text-2xl leading-10 text-center">
+                RoadTrip Community is a diverse group where designers come
+                together to connect, collaborate and grow. We are also welcoming
+                to no-code developers, web developers, software developers,
+                product managers, writers.
+              </p>
+              <p class="block lg:hidden leading-normal p-01 text-center">
+                RoadTrip Community is home to Product Designers, UI/UX
+                Designers, Brand Designers, No-code Developers, Web Developers,
+                Software Developers, Product Managers, Illustrators, Motion
+                Design enthusiasts, UX Writers and lots of Entrepreneurs.
+              </p>
+              <div class="slotc">
+                <div class="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#FFF]">
+                    Design
+                  </div>
+                </div>
+                <div class="bg-[#F6B847] slot p-1 lg:p-[7px] order-4 lg:order-none text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
+                    Tech
+                  </div>
+                </div>
+                <div class="bg-[#231f20] order-1 lg:order-none slot p-1 lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#D0CCE0] lg:border-[#FFF]">
+                    Product
+                  </div>
+                </div>
+                <div class="lg:bg-[#fff] bg-[#D0CCE0] slot p-1 order-2 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
+                    Brand
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="forTwoColor w-full justify-between pt-3 lg:pt-12 flex flex-col lg:flex-row lg:gap-5 gap-3">
+            <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
+              <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+                <div class="relative flex">
+                  <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">Who We Are</h2>
+                  <h2 class="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">Who We Are</h2>
+                </div>
+                <p class="manr text-xs lg:text-base">
+                  We are a community of creatives from Nigeria and Africa,
+                  collectively supporting one another in building a successful
+                  career in the Design & Tech space.
+                </p>
+              </div>
+            </div>
+            <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
+              <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+                <div class="relative flex">
+                  <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">Our Mission</h2>
+                  <h2 class="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">Our Mission</h2>
+                </div>
+                <p class="text-white manr text-xs lg:text-base">
+                  We are a community of creatives from Nigeria and Africa,
+                  collectively supporting one another in building a successful
+                  career in the Design & Tech space.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="forCTA"></div>
         </section>
       </main>
     </>

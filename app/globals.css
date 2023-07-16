@@ -15,6 +15,10 @@ body {
     "Segoe UI Emoji";
 }
 
+.manr {
+  font-family: "Visby Semibold";
+}
+
 .cD400 {
   font-family: "ClashDisplay-Regular";
 }
@@ -83,6 +87,11 @@ body {
   box-shadow: 4px 4px 0 0 #198046;
 }
 
+.offshadblack,
+.offshadblack2 {
+  box-shadow: 4px 4px 0 0 #231f20;
+}
+
 .bg-grene {
   background: #47996b;
 }
@@ -99,26 +108,40 @@ body {
 }
 
 .visbymi {
-  font-family: 'Visby Medium Italic';
+  font-family: "Visby Medium Italic";
 }
 
 .bodyCon {
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   max-width: 1440px;
 }
 
+.slotc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px 13px;
+}
+
 @media only screen and (min-width: 767px) {
   .bodyCon {
-    padding: 0 64px;
     max-width: 1440px;
   }
 }
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1024px) {
   .bodyCon {
-    padding: 0 64px;
     max-width: 1440px;
+  }
+
+  .slotc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .manr {
+    font-family: "Manrope";
   }
 
   .h2-01 {
@@ -130,6 +153,13 @@ body {
 
   .offshad {
     box-shadow: 16px 16px 0 0 #198046;
+  }
+
+  .offshadblack {
+    box-shadow: 16px 16px 0 0 #231f20;
+  }
+  .offshadblack2 {
+    box-shadow: 8px 8px 0 0 #231f20;
   }
 
   .bg-grene {
