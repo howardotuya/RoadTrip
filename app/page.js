@@ -281,8 +281,12 @@ export default function Home() {
             <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
               <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                 <div class="relative flex">
-                  <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">Who We Are</h2>
-                  <h2 class="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">Who We Are</h2>
+                  <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                    Who We Are
+                  </h2>
+                  <h2 class="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                    Who We Are
+                  </h2>
                 </div>
                 <p class="manr text-xs lg:text-base">
                   We are a community of creatives from Nigeria and Africa,
@@ -294,13 +298,17 @@ export default function Home() {
             <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
               <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                 <div class="relative flex">
-                  <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">Our Mission</h2>
-                  <h2 class="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">Our Mission</h2>
+                  <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                    Our Mission
+                  </h2>
+                  <h2 class="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                    Our Mission
+                  </h2>
                 </div>
                 <p class="text-white manr text-xs lg:text-base">
-                  We are a community of creatives from Nigeria and Africa,
-                  collectively supporting one another in building a successful
-                  career in the Design & Tech space.
+                  We are on a mission to build an exclusive community of members
+                  with clear-cut goals and a support system that helps them
+                  achieve their goals.
                 </p>
               </div>
             </div>
