@@ -92,6 +92,10 @@ body {
   box-shadow: 4px 4px 0 0 #231f20;
 }
 
+.offshadctayellow {
+  box-shadow: 4px 4px 0 0 #f6b847;
+}
+
 .bg-grene {
   background: #47996b;
 }

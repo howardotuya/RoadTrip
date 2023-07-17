@@ -313,7 +313,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="forCTA"></div>
+          <div className="forCTA flex justify-center items-center pt-6 lg:pt-12">
+            <div class=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">More About Us</div>
+          </div>
         </section>
       </main>
     </>
