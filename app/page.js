@@ -278,8 +278,8 @@ export default function Home() {
             </div>
           </div>
           <div className="forTwoColor w-full justify-between pt-3 lg:pt-12 flex flex-col lg:flex-row lg:gap-5 gap-3">
-            <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
-              <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+            <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
+              <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                 <div class="relative flex">
                   <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
                     Who We Are
@@ -295,8 +295,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div class="offshadblack2 w-full border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
-              <div class=" border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+            <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
+              <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                 <div class="relative flex">
                   <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
                     Our Mission
