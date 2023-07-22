@@ -336,10 +336,10 @@ export default function Home() {
           <div class="md:grid sp-cont">
             <div class="lg:h-[370px] spa">
               <Image class="invisible lg:hidden w-full h-full" src={mg1} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     2022 End Of Year Hangout
                   </h2>
                 </div>
@@ -347,10 +347,10 @@ export default function Home() {
             </div>
             <div class="lg:h-[370px] spa">
               <Image class="invisible lg:hidden w-full h-full" src={mg2} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
@@ -358,10 +358,10 @@ export default function Home() {
             </div>
             <div class="lg:h-[370px] spa ">
               <Image class="invisible lg:hidden w-full h-full" src={mg3} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
@@ -369,19 +369,19 @@ export default function Home() {
             </div>
             <div class="lg:h-[370px] spa ">
               <Image class="invisible lg:hidden w-full h-full" src={mg4} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">Devfest 2022</h2>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">Devfest 2022</h2>
                 </div>
               </div>
             </div>
             <div class="lg:h-[370px] spa ">
               <Image class="invisible lg:hidden w-full h-full" src={mg5} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     2022 End Of Year Hangout
                   </h2>
                 </div>
@@ -389,10 +389,10 @@ export default function Home() {
             </div>
             <div class="lg:h-[370px] spa ">
               <Image class="invisible lg:hidden w-full h-full" src={mg6} alt="" />
-              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
-                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] lg:p-2 p-[3px] pl-0">
+                <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
