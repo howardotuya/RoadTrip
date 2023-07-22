@@ -1,10 +1,19 @@
 "use client";
 import Image from "next/image";
-import rtlogo from "../public/rtlogo.png";
-import rtlogosmall from "../public/rtlogo-small.png";
-import menu from "../public/menu.png";
-import heros from "../public/heros.png";
-import close from "../public/close.png";
+
+import rtlogo from "../public/Images/rtlogo.png";
+import rtlogosmall from "../public/Images/rtlogo-small.png";
+import menu from "../public/Images/menu.png";
+import heros from "../public/Images/heros.png";
+import close from "../public/Images/close.png";
+
+import mg1 from "../public/Images/p1.png";
+import mg2 from "../public/Images/p2.png";
+import mg3 from "../public/Images/p3.png";
+import mg4 from "../public/Images/p4.png";
+import mg5 from "../public/Images/p5.png";
+import mg6 from "../public/Images/p6.png";
+
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -238,83 +247,157 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="conntianer px-[12px] lg:px-[120px] py-[48px] lg:py-[72px]">
-          <div className="blue offshadblack bg-[#6868AC] lg:bg-[#4D34CC] border lg:border-[3px] border-[#231F20] p-[10px] lg:p-4 text-white">
-            <div class="border lg:border-[3px] border-white px-6 lg:px-20 py-[38px] lg:py-[60px] flex flex-col gap-10">
-              <p class="hidden lg:block text-2xl leading-10 text-center">
-                RoadTrip Community is a diverse group where designers come
-                together to connect, collaborate and grow. We are also welcoming
-                to no-code developers, web developers, software developers,
-                product managers, writers.
-              </p>
-              <p class="block lg:hidden leading-normal p-01 text-center">
-                RoadTrip Community is home to Product Designers, UI/UX
-                Designers, Brand Designers, No-code Developers, Web Developers,
-                Software Developers, Product Managers, Illustrators, Motion
-                Design enthusiasts, UX Writers and lots of Entrepreneurs.
-              </p>
-              <div class="slotc">
-                <div class="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
-                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#FFF]">
-                    Design
+        <section class="bodyCon">
+          <div className="conntianer px-[12px] lg:px-[120px] py-[48px] lg:py-[72px]">
+            <div className="blue offshadblack2 bg-[#6868AC] lg:bg-[#4D34CC] border lg:border-[3px] border-[#231F20] p-[10px] lg:p-4 text-white">
+              <div class="border lg:border-[3px] border-white px-6 lg:px-20 py-[38px] lg:py-[60px] flex flex-col gap-10">
+                <p class="hidden lg:block text-2xl leading-10 text-center">
+                  RoadTrip Community is a diverse group where designers come
+                  together to connect, collaborate and grow. We are also
+                  welcoming to no-code developers, web developers, software
+                  developers, product managers, writers.
+                </p>
+                <p class="block lg:hidden leading-normal p-01 text-center">
+                  RoadTrip Community is home to Product Designers, UI/UX
+                  Designers, Brand Designers, No-code Developers, Web
+                  Developers, Software Developers, Product Managers,
+                  Illustrators, Motion Design enthusiasts, UX Writers and lots
+                  of Entrepreneurs.
+                </p>
+                <div class="slotc">
+                  <div class="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                    <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#FFF]">
+                      Design
+                    </div>
+                  </div>
+                  <div class="bg-[#F6B847] slot p-1 lg:p-[7px] order-4 lg:order-none text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                    <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
+                      Tech
+                    </div>
+                  </div>
+                  <div class="bg-[#231f20] order-1 lg:order-none slot p-1 lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                    <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#D0CCE0] lg:border-[#FFF]">
+                      Product
+                    </div>
+                  </div>
+                  <div class="lg:bg-[#fff] bg-[#D0CCE0] slot p-1 order-2 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                    <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
+                      Brand
+                    </div>
                   </div>
                 </div>
-                <div class="bg-[#F6B847] slot p-1 lg:p-[7px] order-4 lg:order-none text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
-                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
-                    Tech
+              </div>
+            </div>
+            <div className="forTwoColor w-full justify-between pt-3 lg:pt-8 flex flex-col lg:flex-row lg:gap-5 gap-3">
+              <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
+                <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+                  <div class="relative flex">
+                    <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                      Who We Are
+                    </h2>
+                    <h2 class="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                      Who We Are
+                    </h2>
                   </div>
+                  <p class="manr text-xs lg:text-base">
+                    We are a community of creatives from Nigeria and Africa,
+                    collectively supporting one another in building a successful
+                    career in the Design & Tech space.
+                  </p>
                 </div>
-                <div class="bg-[#231f20] order-1 lg:order-none slot p-1 lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
-                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#D0CCE0] lg:border-[#FFF]">
-                    Product
+              </div>
+              <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
+                <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
+                  <div class="relative flex">
+                    <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                      Our Mission
+                    </h2>
+                    <h2 class="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                      Our Mission
+                    </h2>
                   </div>
+                  <p class="text-white manr text-xs lg:text-base">
+                    We are on a mission to build an exclusive community of
+                    members with clear-cut goals and a support system that helps
+                    them achieve their goals.
+                  </p>
                 </div>
-                <div class="lg:bg-[#fff] bg-[#D0CCE0] slot p-1 order-2 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
-                  <div class="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
-                    Brand
-                  </div>
-                </div>
+              </div>
+            </div>
+            <div className="forCTA flex justify-center items-center pt-6 lg:pt-12">
+              <div class=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">
+                More About Us
               </div>
             </div>
           </div>
-          <div className="forTwoColor w-full justify-between pt-3 lg:pt-12 flex flex-col lg:flex-row lg:gap-5 gap-3">
-            <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
-              <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
-                <div class="relative flex">
-                  <h2 class="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
-                    Who We Are
-                  </h2>
-                  <h2 class="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
-                    Who We Are
-                  </h2>
-                </div>
-                <p class="manr text-xs lg:text-base">
-                  We are a community of creatives from Nigeria and Africa,
-                  collectively supporting one another in building a successful
-                  career in the Design & Tech space.
-                </p>
-              </div>
-            </div>
-            <div class="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
-              <div class=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
-                <div class="relative flex">
-                  <h2 class="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
-                    Our Mission
-                  </h2>
-                  <h2 class="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
-                    Our Mission
+        </section>
+
+        <section>
+          <div class="md:grid sp-cont">
+            <div class="lg:h-[370px] spa">
+              <Image class="invisible lg:hidden w-full h-full" src={mg1} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">Nov. 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                    2022 End Of Year Hangout
                   </h2>
                 </div>
-                <p class="text-white manr text-xs lg:text-base">
-                  We are on a mission to build an exclusive community of members
-                  with clear-cut goals and a support system that helps them
-                  achieve their goals.
-                </p>
               </div>
             </div>
-          </div>
-          <div className="forCTA flex justify-center items-center pt-6 lg:pt-12">
-            <div class=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">More About Us</div>
+            <div class="lg:h-[370px] spa">
+              <Image class="invisible lg:hidden w-full h-full" src={mg2} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">May 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                    Untitled Design Conference
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="lg:h-[370px] spa ">
+              <Image class="invisible lg:hidden w-full h-full" src={mg3} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">May 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                    Untitled Design Conference
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="lg:h-[370px] spa ">
+              <Image class="invisible lg:hidden w-full h-full" src={mg4} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">Nov. 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">Devfest 2022</h2>
+                </div>
+              </div>
+            </div>
+            <div class="lg:h-[370px] spa ">
+              <Image class="invisible lg:hidden w-full h-full" src={mg5} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">Nov. 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                    2022 End Of Year Hangout
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="lg:h-[370px] spa ">
+              <Image class="invisible lg:hidden w-full h-full" src={mg6} alt="" />
+              <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] p-2 pl-0">
+                <div class="border-[#231f20] border-l-0 border py-3 px-4 w-[237px]">
+                  <h6 class="p-01r text-[8px]">May 2022</h6>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-1 uppercase">
+                    Untitled Design Conference
+                  </h2>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
