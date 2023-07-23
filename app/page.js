@@ -14,6 +14,16 @@ import mg4 from "../public/Images/p4.png";
 import mg5 from "../public/Images/p5.png";
 import mg6 from "../public/Images/p6.png";
 
+import c1 from "../public/Images/companies/cowrywise.svg";
+import c2 from "../public/Images/companies/interswitch.svg";
+import c3 from "../public/Images/companies/renmoney.svg";
+import c4 from "../public/Images/companies/kuda.svg";
+import c5 from "../public/Images/companies/zazuu.svg";
+import c6 from "../public/Images/companies/iqwiki.svg";
+import c7 from "../public/Images/companies/zebrra.svg";
+import c8 from "../public/Images/companies/oneid.svg";
+import c9 from "../public/Images/companies/feedpay.svg";
+
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -335,7 +345,11 @@ export default function Home() {
         <section>
           <div class="md:grid sp-cont">
             <div class="lg:h-[370px] spa">
-              <Image class="invisible lg:hidden w-full h-full" src={mg1} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg1}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
@@ -346,7 +360,11 @@ export default function Home() {
               </div>
             </div>
             <div class="lg:h-[370px] spa">
-              <Image class="invisible lg:hidden w-full h-full" src={mg2} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg2}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
@@ -357,7 +375,11 @@ export default function Home() {
               </div>
             </div>
             <div class="lg:h-[370px] spa ">
-              <Image class="invisible lg:hidden w-full h-full" src={mg3} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg3}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
@@ -368,16 +390,26 @@ export default function Home() {
               </div>
             </div>
             <div class="lg:h-[370px] spa ">
-              <Image class="invisible lg:hidden w-full h-full" src={mg4} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg4}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">Devfest 2022</h2>
+                  <h2 class="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                    Devfest 2022
+                  </h2>
                 </div>
               </div>
             </div>
             <div class="lg:h-[370px] spa ">
-              <Image class="invisible lg:hidden w-full h-full" src={mg5} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg5}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">Nov. 2022</h6>
@@ -388,7 +420,11 @@ export default function Home() {
               </div>
             </div>
             <div class="lg:h-[370px] spa ">
-              <Image class="invisible lg:hidden w-full h-full" src={mg6} alt="" />
+              <Image
+                class="invisible lg:hidden w-full h-full"
+                src={mg6}
+                alt=""
+              />
               <div class="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] lg:p-2 p-[3px] pl-0">
                 <div class="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 class="p-01r text-[8px]">May 2022</h6>
@@ -405,10 +441,53 @@ export default function Home() {
           <div class="flex flex-col gap-6 lg:gap-2">
             <span class="hidden lg:flex relative">
               <h3 class="text-[#fff] cD600 text-[64px] z-50">Our Flex?</h3>
-              <h3 class="text-[#231f20] cD600 absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[64px] z-10">Our Flex?</h3>
+              <h3 class="text-[#231f20] cD600 absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[64px] z-10">
+                Our Flex?
+              </h3>
             </span>
-            <h1 class="text-[32px] lg:text-[64px] cD700 max-w-[900px]">You will find RoadTrippers at reputable companies</h1>
-            <p class="lg:hidden p-01 pl-[72px] self-end">Over the past 1 year, we have been able to record the following progress based on testimonials and feedback from our members</p>
+            <h1 class="text-[32px] lg:text-[64px] cD700 max-w-[900px]">
+              You will find RoadTrippers at reputable companies
+            </h1>
+            <p class="lg:hidden p-01 pl-[72px] self-end">
+              Over the past 1 year, we have been able to record the following
+              progress based on testimonials and feedback from our members
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="">
+            <div className="grid cp-cont">
+              <div>
+                <Image src={c1} alt="Cowrywise" />
+              </div>
+              <div>
+                <Image src={c2} alt="Interswitch" />
+              </div>
+              <div>
+                <Image src={c3} alt="Renmoney" />
+              </div>
+              <div>
+                <Image src={c4} alt="Kuda MFB" />
+              </div>
+              <div>
+                <Image src={c5} alt="Zazuu" />
+              </div>
+            </div>
+            <div className="grid cp-cont2">
+              <div>
+                <Image src={c6} alt="IQ.Wiki" />
+              </div>
+              <div>
+                <Image src={c7} alt="Zebrra" />
+              </div>
+              <div>
+                <Image src={c8} alt="OneID" />
+              </div>
+              <div>
+                <Image src={c9} alt="FeedPay" />
+              </div>
+            </div>
           </div>
         </section>
       </main>

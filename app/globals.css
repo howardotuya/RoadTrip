@@ -94,7 +94,7 @@ body {
 
 .offshadblack3 {
   box-shadow: 4px 4px 0 0 #231f20;
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 
 .offshadctayellow {
@@ -162,6 +162,39 @@ body {
 }
 .spa:nth-child(6) {
   background-image: url("../public/Images/p6.png");
+}
+
+.cp-cont {
+  grid-template-columns: repeat(5, auto);
+}
+.cp-cont2 {
+  grid-template-columns: repeat(4, auto);
+}
+
+.cp-cont2 > div,
+.cp-cont > div {
+  height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid #231f20;
+}
+
+.cp-cont > div:last-of-type, .cp-cont2 > div:last-of-type {
+  border-right:none;
+}
+
+.cp-cont > div {
+  border-top: 3px solid #231f20;
+}
+.cp-cont > div {
+  border-bottom: 3px solid #231f20;
+}
+
+.cp-cont > div > img,
+.cp-cont2 > div > img {
+  height: auto;
+  width: auto;
 }
 
 @media only screen and (min-width: 767px) {
