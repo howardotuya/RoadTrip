@@ -400,6 +400,17 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section class="bg-[#A59FEF] pt-10 pb-5 lg:py-20 px-[25px] lg:px-[120px]">
+          <div class="flex flex-col gap-6 lg:gap-2">
+            <span class="hidden lg:flex relative">
+              <h3 class="text-[#fff] cD600 text-[64px] z-50">Our Flex?</h3>
+              <h3 class="text-[#231f20] cD600 absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[64px] z-10">Our Flex?</h3>
+            </span>
+            <h1 class="text-[32px] lg:text-[64px] cD700 max-w-[900px]">You will find RoadTrippers at reputable companies</h1>
+            <p class="lg:hidden p-01 pl-[72px] self-end">Over the past 1 year, we have been able to record the following progress based on testimonials and feedback from our members</p>
+          </div>
+        </section>
       </main>
     </>
   );
