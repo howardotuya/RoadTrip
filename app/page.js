@@ -488,7 +488,7 @@ export default function Home() {
                 <Image src={c8} alt="OneID" />
               </div>
               <div className="">
-                <Image src={c9} alt="FeedPay" />
+                <Image className="max-w-[177px]" src={c9} alt="FeedPay" />
               </div>
             </div>
           </div>
