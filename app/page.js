@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 
-import rtlogo from "../public/Images/rtlogo.png";
-import rtlogosmall from "../public/Images/rtlogo-small.png";
+import rtlogo from "../public/Images/logo.svg";
+import rtlogosmall from "../public/Images/logo.svg";
 import menu from "../public/Images/menu.png";
 import heros from "../public/Images/heros.png";
 import close from "../public/Images/close.png";
@@ -81,7 +81,7 @@ export default function Home() {
         >
           <div className="border-b-[3px] border-[#231F20] flex justify-between items-center">
             <div className="px-3">
-              <h2 className="tracking-[-0.32px] font-semibold visby-sem text-xs lg:text-base">Menu</h2>
+              <h2 className="tracking-[-0.32px] font-semibold cD600">Menu</h2>
             </div>
             <div className="border-[#231F20] border-l-[3px] py-4 px-6">
               <Image
@@ -121,20 +121,22 @@ export default function Home() {
         <header className="headerBG w-full">
           <nav className="w-full flex justify-between border-b-4 border-[#231F20]">
             <div className="lg:px-6 px-3 border-r-4 border-[#231F20] flex justify-center items-center">
-              <Image
-                src={rtlogosmall}
-                alt="RoadTrip Community Logo"
-                className="block lg:hidden w-[82px] h-[22px]"
-                quality={100}
-                priority
-              />
-              <Image
-                src={rtlogo}
-                alt="RoadTrip Community Logo"
-                className="hidden lg:block w-[136px] h-[38.843px]"
-                quality={100}
-                priority
-              />
+              <div className="w-[96px] lg:w-[136px]">
+                <Image
+                  src={rtlogosmall}
+                  alt="RoadTrip Community Logo"
+                  className="block lg:hidden w-full h-full"
+                  quality={100}
+                  priority
+                />
+                <Image
+                  src={rtlogo}
+                  alt="RoadTrip Community Logo"
+                  className="hidden lg:block w-full h-full"
+                  quality={100}
+                  priority
+                />
+              </div>
             </div>
 
             <div className="flex flex-row items-center justify-center border-l-4 border-[#231F20]">
@@ -148,7 +150,7 @@ export default function Home() {
               <div className="hidden lg:flex">
                 <Link
                   href="#"
-                  className="visby-sem text-xs lg:text-base bg-[#231F20]  text-[#F9F4E8] py-5 pl-16 shrink-0 flex pr-7"
+                  className="cD600 bg-[#231F20]  text-[#F9F4E8] py-5 pl-16 shrink-0 flex pr-7"
                 >
                   Donate
                 </Link>
@@ -188,7 +190,7 @@ export default function Home() {
               <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
                 <Link
                   href=""
-                  className="bg-grene self-start lg:self-end visby-sem text-xs lg:text-base font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:visby-sem text-xs lg:text-base lg:leading-6"
+                  className="bg-grene self-start lg:self-end cD600 font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase text-white lg:cD600 lg:leading-6"
                 >
                   Meet the roadtrippers
                 </Link>
@@ -214,22 +216,22 @@ export default function Home() {
         >
           <div className=" scroll-content">
             <div className="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
-              <p className="visby-sem text-xs lg:text-base lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
                 Design is intelligence made visible
               </p>
               <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-              <p className="visby-sem text-xs lg:text-base lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
                 Design is intelligence made visible
               </p>
               <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-              <p className="visby-sem text-xs lg:text-base lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
                 Design is intelligence made visible
               </p>
               <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
-              <p className="visby-sem text-xs lg:text-base lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
+              <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
                 Design is intelligence made visible
               </p>
               <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
@@ -241,18 +243,18 @@ export default function Home() {
           <div className=" bodyCon">
             <div className="lg:py-[74px] lg:px-[120px] py-10 px-8">
               <p className="text-2xl hidden lg:block lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center">
-                WE AT <span className="visby-sem text-xs lg:text-base">“RoadTrip Community”</span>{" "}
-                believe that growth is a <span className="visby-sem text-xs lg:text-base">marathon</span>
+                WE AT <span className="cD600">“RoadTrip Community”</span>{" "}
+                believe that growth is a <span className="cD600">marathon</span>
                 , not a sprint. THAT IS WHAT OUR NAME{" "}
-                <span className="visby-sem text-xs lg:text-base">SYMBOLIZES</span>; OUR journey of
+                <span className="cD600">SYMBOLIZES</span>; OUR journey of
                 growth, progress, and community support.
               </p>
               <p className="text-2xl block lg:hidden lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center leading-normal">
-                The name <span className="visby-sem text-xs lg:text-base">“RoadTrip”</span> for the
+                The name <span className="cD600">“RoadTrip”</span> for the
                 community was coined from the{" "}
-                <span className="visby-sem text-xs lg:text-base">understanding</span> that{" "}
-                <span className="visby-sem text-xs lg:text-base">life’s race is not a sprint</span> but
-                rather a <span className="visby-sem text-xs lg:text-base">marathon.</span>
+                <span className="cD600">understanding</span> that{" "}
+                <span className="cD600">life’s race is not a sprint</span> but
+                rather a <span className="cD600">marathon.</span>
               </p>
             </div>
           </div>
@@ -276,22 +278,22 @@ export default function Home() {
                   of Entrepreneurs.
                 </p>
                 <div className="slotc">
-                  <div className="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center visby-sem text-xs lg:text-base lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div className="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
                     <div className="lg:py-[9px] w-full py-1 border-[0.587px] border-[#FFF]">
                       Design
                     </div>
                   </div>
-                  <div className="bg-[#F6B847] slot p-1 lg:p-[7px] order-4 lg:order-none text-center visby-sem text-xs lg:text-base lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div className="bg-[#F6B847] slot p-1 lg:p-[7px] order-4 lg:order-none text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
                     <div className="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
                       Tech
                     </div>
                   </div>
-                  <div className="bg-[#231f20] order-1 lg:order-none slot p-1 lg:p-[7px] text-center visby-sem text-xs lg:text-base lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div className="bg-[#231f20] order-1 lg:order-none slot p-1 lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
                     <div className="lg:py-[9px] w-full py-1 border-[0.587px] border-[#D0CCE0] lg:border-[#FFF]">
                       Product
                     </div>
                   </div>
-                  <div className="lg:bg-[#fff] bg-[#D0CCE0] slot p-1 order-2 lg:order-none lg:p-[7px] text-center visby-sem text-xs lg:text-base lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
+                  <div className="lg:bg-[#fff] bg-[#D0CCE0] slot p-1 order-2 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
                     <div className="lg:py-[9px] w-full py-1 border-[0.587px] border-[#231f20] text-[#231f20]">
                       Brand
                     </div>
@@ -303,10 +305,10 @@ export default function Home() {
               <div className="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#F6B847]">
                 <div className=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                   <div className="relative flex">
-                    <h2 className="visby-sem text-xs lg:text-base text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                    <h2 className="cD600 text-[#231f20] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
                       Who We Are
                     </h2>
-                    <h2 className="visby-sem text-xs lg:text-base text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                    <h2 className="cD600 text-[#fff] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
                       Who We Are
                     </h2>
                   </div>
@@ -320,10 +322,10 @@ export default function Home() {
               <div className="offshadblack2 w-full border lg:border-[3px] border-[#231f20] lg:p-4 p-[10px] bg-[#47996B] lg:bg-[#198046]">
                 <div className=" border lg:border-[3px] border-[#231f20] pt-[38px] lg:pt-[89px] px-6 pb-6">
                   <div className="relative flex">
-                    <h2 className="visby-sem text-xs lg:text-base text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
+                    <h2 className="cD600 text-[#fff] z-50 text-[40px] lg:text-[64px] tracking-[-0.64px]">
                       Our Mission
                     </h2>
-                    <h2 className="visby-sem text-xs lg:text-base text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
+                    <h2 className="cD600 text-[#231f20] absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[40px] lg:text-[64px] z-10 tracking-[-0.64px]">
                       Our Mission
                     </h2>
                   </div>
@@ -336,7 +338,7 @@ export default function Home() {
               </div>
             </div>
             <div className="forCTA flex justify-center items-center pt-6 lg:pt-12">
-              <div className=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase visby-sem text-xs lg:text-base">
+              <div className=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">
                 More About Us
               </div>
             </div>
@@ -354,7 +356,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     2022 End Of Year Hangout
                   </h2>
                 </div>
@@ -369,7 +371,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">May 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
@@ -384,7 +386,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">May 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
@@ -399,7 +401,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Devfest 2022
                   </h2>
                 </div>
@@ -414,7 +416,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">Nov. 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     2022 End Of Year Hangout
                   </h2>
                 </div>
@@ -429,7 +431,7 @@ export default function Home() {
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] lg:p-2 p-[3px] pl-0">
                 <div className="border-[#231f20] border-l-0 border py-2 lg:py-3 px-3 lg:px-4 w-[193px] lg:w-[237px]">
                   <h6 className="p-01r text-[8px]">May 2022</h6>
-                  <h2 className="visby-sem text-xs lg:text-base text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
+                  <h2 className="cD600 text-[10px] lg:text-xs pt-[2px] lg:pt-1 uppercase">
                     Untitled Design Conference
                   </h2>
                 </div>
@@ -439,10 +441,10 @@ export default function Home() {
         </section>
 
         <section className="bg-[#A59FEF] pt-10 pb-5 lg:py-20 px-[25px] lg:px-[120px]">
-          <div className="flex flex-col gap-6 lg:gap-2">
+          <div className="flex flex-col gap-6 lg:gap-2 bodyCon">
             <span className="hidden lg:flex relative">
-              <h3 className="text-[#fff] visby-sem text-xs lg:text-base text-[64px] z-50">Our Flex?</h3>
-              <h3 className="text-[#231f20] visby-sem text-xs lg:text-base absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[64px] z-10">
+              <h3 className="text-[#fff] cD600 text-[64px] z-50">Our Flex?</h3>
+              <h3 className="text-[#231f20] cD600 absolute top-[2px] left-[2px] lg:top-1 lg:left-1 text-[64px] z-10">
                 Our Flex?
               </h3>
             </span>
@@ -495,7 +497,9 @@ export default function Home() {
         <section className="bg-[#1FA95B] border-t-[3px] border-b-[3px] lg:border-none border-[#231f20] py-[72px] lg:pb-12 ">
           <div className=" flex flex-col justify-center items-center gap-4 lg:gap-14">
             <div className="text-white flex px-[60px] justify-center items-center flex-col gap-2">
-              <h2 className="cD700 text-[32px] leading-[38px] lg:leading-[76px] text-center lg:text-[64px]">Subscribe to our newsletter</h2>
+              <h2 className="cD700 text-[32px] leading-[38px] lg:leading-[76px] text-center lg:text-[64px]">
+                Subscribe to our newsletter
+              </h2>
               <p className="max-w-[690px] text-center visby-sem lg:manD text-xs lg:text-base leading-normal">
                 Join RoadTrip, a community of adventure seekers and tech
                 enthusiasts, and let us embark on unforgettable journeys
@@ -510,7 +514,7 @@ export default function Home() {
                 placeholder="Your email address"
               />
               <div className="flex justify-center items-center">
-                <button class="visby-sem text-xs lg:text-base offshadctayellow leading-6 bg-black py-4 px-3 max-w-[174px] w-full lg:max-w-[193px] lg:px-8 lg:py-4 text-white">
+                <button class="cD600 offshadctayellow leading-6 bg-black px-8 py-4 text-white">
                   Subscribe
                 </button>
               </div>
