@@ -6,6 +6,20 @@
 @import url("../public/clashdisplay/Fonts/WEB/css/clash-display.css");
 @import url("../public/sf/stylesheet.css");
 
+@layer utilities {
+  .visby-reg {
+    font-family: "Visby Regular";
+  }
+  .visby-sem {
+    font-family: "Visby Semibold";
+  }
+  .manD {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  }
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -100,6 +114,9 @@ body {
 .offshadctayellow {
   box-shadow: 4px 4px 0 0 #f6b847;
 }
+.offshadctayellow2 {
+  box-shadow: 4px 4px 0 0 #f6b847;
+}
 
 .bg-grene {
   background: #47996b;
@@ -164,37 +181,51 @@ body {
   background-image: url("../public/Images/p6.png");
 }
 
-.cp-cont {
-  grid-template-columns: repeat(5, auto);
-}
-.cp-cont2 {
-  grid-template-columns: repeat(4, auto);
-}
-
 .cp-cont2 > div,
 .cp-cont > div {
-  height: 127px;
+  height: 117px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 3px solid #231f20;
+  border-top: 4px solid #231f20;
 }
 
-.cp-cont > div:last-of-type, .cp-cont2 > div:last-of-type {
-  border-right:none;
-}
-
-.cp-cont > div {
-  border-top: 3px solid #231f20;
-}
-.cp-cont > div {
-  border-bottom: 3px solid #231f20;
+.cp-cont2 > div:last-of-type {
+  border-bottom: 4px solid #231f20;
 }
 
 .cp-cont > div > img,
 .cp-cont2 > div > img {
   height: auto;
   width: auto;
+}
+
+input::placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input::-webkit-input-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input::-moz-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input:-ms-input-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 767px) {
@@ -228,6 +259,50 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .cp-cont {
+    grid-template-columns: repeat(5, auto);
+  }
+  .cp-cont2 {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .cp-cont2 > div,
+  .cp-cont > div {
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 4px solid #231f20;
+  }
+
+  .cp-cont > div:last-of-type,
+  .cp-cont2 > div:last-of-type {
+    border-right: none !important;
+  }
+
+  .cp-cont > div {
+    border-top: 4px solid #231f20;
+  }
+  .cp-cont2 > div {
+    border-bottom: 4px solid #231f20;
+  }
+
   .sp-cont {
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
