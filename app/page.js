@@ -351,6 +351,7 @@ export default function Home() {
               <Image
                 className="invisible lg:hidden w-full h-full"
                 src={mg1}
+  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
@@ -365,7 +366,7 @@ export default function Home() {
             <div className="lg:h-[370px] spa">
               <Image
                 className="invisible lg:hidden w-full h-full"
-                src={mg2}
+                src={mg2}  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
@@ -380,7 +381,7 @@ export default function Home() {
             <div className="lg:h-[370px] spa ">
               <Image
                 className="invisible lg:hidden w-full h-full"
-                src={mg3}
+                src={mg3}  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
@@ -395,7 +396,7 @@ export default function Home() {
             <div className="lg:h-[370px] spa ">
               <Image
                 className="invisible lg:hidden w-full h-full"
-                src={mg4}
+                src={mg4}  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
@@ -410,7 +411,7 @@ export default function Home() {
             <div className="lg:h-[370px] spa ">
               <Image
                 className="invisible lg:hidden w-full h-full"
-                src={mg5}
+                src={mg5}  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] pl-0 lg:p-2 p-[3px]">
@@ -425,7 +426,7 @@ export default function Home() {
             <div className="lg:h-[370px] spa ">
               <Image
                 className="invisible lg:hidden w-full h-full"
-                src={mg6}
+                src={mg6}  placeholder="blur"
                 alt=""
               />
               <div className="bg-white offshadblack3 absolute bottom-4 border border-[#231f20] lg:p-2 p-[3px] pl-0">
