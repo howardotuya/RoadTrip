@@ -175,10 +175,10 @@ export default function Home() {
               <div className="">
                 <Image
                   src={heros}
-                  alt=""
+                  alt="Hero Section Image"
                   className="border-[1.404px] lg:border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
                   quality={100}
-                  priority
+                    placeholder="blur"
                 />
               </div>
               <div className="pt-6 lg:pt-[29px]">
